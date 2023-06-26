@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    --primary_light-red: hsl(0, 100%, 67%);
+    --primary_orangey-yellow: hsl(39, 100%, 56%);
+    --primary_green-teal: hsl(166, 100%, 37%);
+    --primery_cobalt-blue: hsl(234, 85%, 45%);
+    --gradient-background_light-slade-blue: hsl(252, 100%, 67%);
+    --gradient-background_light-royal-blu: hsl(241, 81%, 54%);
+    --circle_violet-blue: hsla(256, 72%, 46%, 1);
+    --circle_persian-blue: hsla(241, 72%, 46%, 0);
+    --neutral_white: hsl(0, 0%, 100%);
+    --neutral_pale-blue:  hsl(221, 100%, 96%);
+    --neutral_light-lavender: hsl(241, 100%, 89%);
+    --neutral_dark-gray-blue: hsl(224, 30%, 27%);
+    --medium-weight: 500;
+    --heavy-weight: 700;
+    --bold-weight: 800;
+}
+
+.attribution { 
+    font-size: 11px;
+     text-align: center;
+    }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
