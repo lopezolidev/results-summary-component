@@ -22,16 +22,125 @@ html {
     --neutral_pale-blue:  hsl(221, 100%, 96%);
     --neutral_light-lavender: hsl(241, 100%, 89%);
     --neutral_dark-gray-blue: hsl(224, 30%, 27%);
-    --medium-weight: 500;
-    --heavy-weight: 700;
-    --bold-weight: 800;
+    --weight-medium: 500;
+    --weight-heavy: 700;
+    --weight-bold: 800;
+    --font-big: 5.8rem;
+    --font-medium: 2.2rem;
+    --font-subtitles: 1.6rem;
+    --font-text: 1.4rem;
 }
 
+/* MAIN CONTAINER */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+/* TOP CONTAINER */
+
+.top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 2.4rem;
+    height: 48%;
+    width: 100%;
+    padding-block: 2.4rem;
+    padding-inline: 4.8rem;
+    background: linear-gradient(var(--gradient-background_light-slade-blue), var(--gradient-background_light-royal-blu));
+    border-bottom-left-radius: 3.2rem;
+    border-bottom-right-radius: 3.2rem;
+}
+
+.top .top-result {
+    color: var(--neutral_light-lavender);
+    font-size: var(--font-medium);
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--circle_violet-blue), var(--circle_persian-blue) );
+}
+
+.circle h1 {
+    font-size: var(--font-big);
+    color: var(--neutral_white);
+}
+
+.circle h3 {
+    font-size: var(--font-subtitles);
+    color: var(--neutral_light-lavender);
+    opacity: .5; /*THIS IS THE TRICKKKK*/
+}
+
+.subtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.subtitle h2 {
+    color: var(--neutral_white);
+    font-size: var(--font-medium);
+}
+
+.subtitle h3 {
+    color: var(--neutral_light-lavender);
+    font-size: var(--font-subtitles);
+    text-align: center;
+    font-weight: var(--weight-medium);
+}
+
+
+
+
+/* BOTTOM CONTAINER */
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    height: 52%;
+}
+
+
+/* FOOTER */
+
 .attribution { 
-    font-size: 11px;
-     text-align: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 100%;
+
+    font-size: var(--subtitles-font);
+    text-align: center;
+}
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* .analytics-wrapper {
+
+} */
