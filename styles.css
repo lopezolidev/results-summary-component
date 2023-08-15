@@ -270,3 +270,40 @@ body {
     background-color: var(--primary_cobalt-blue--LOW-OPACITY);
     color: var(--primary_cobalt-blue);
 }
+
+
+/* Media queries */
+
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        align-items: center;
+    } 
+    
+    .data-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .top {
+        height: 48%;
+        width: 36%;
+        border-top-left-radius: 3.2rem;
+        border-top-right-radius: 3.2rem;
+        justify-content: center;
+        box-shadow: 1px 17px 26px 4px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 1px 17px 26px 4px rgba(0,0,0,0.25);
+        -moz-box-shadow: 1px 17px 26px 4px rgba(0,0,0,0.25);
+    }
+
+    .bottom {
+        height: 48%;
+        width: 36%;
+        box-shadow: 18px 17px 26px 4px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 18px 17px 26px 4px rgba(0,0,0,0.25);
+        -moz-box-shadow: 18px 17px 26px 4px rgba(0,0,0,0.25);
+    }
+}
